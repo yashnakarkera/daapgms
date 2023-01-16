@@ -1,3 +1,14 @@
+MERGE_SORT(arr, beg, end)  
+  
+if beg < end  
+set mid = (beg + end)/2  
+MERGE_SORT(arr, beg, mid)  
+MERGE_SORT(arr, mid + 1, end)  
+MERGE (arr, beg, mid, end)  
+end of if  
+  
+END MERGE_SORT
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
